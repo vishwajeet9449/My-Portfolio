@@ -1,0 +1,25 @@
+* {
+    font-family: 'Times New Roman', Arial, sans-serif;
+    background-color: lavender;
+    color: rgb(79, 15, 15);
+}
+
+.firstrow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name {
+    width: 700px;
+}
+
+h1 {
+    font-size: 4rem;
+    width: 500px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
