@@ -46,7 +46,7 @@ header {
 
 /**Main**/
 .main {
-  background-image: url("/Images/Background\ image.jpg");
+  background-image: url("Images/Background\ image.jpg");
   height: 600px;
   width: 100%;
   background-size: cover;
