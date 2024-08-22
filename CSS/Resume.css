@@ -1,25 +1,192 @@
+/* Global Styles */
 * {
-    font-family: 'Times New Roman', Arial, sans-serif;
-    background-color: lavender;
-    color: rgb(79, 15, 15);
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #1a1a1a;
+    /* Dark background */
+    color: #f0f0f0;
+    /* Light text color */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Download Link */
+.download-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.download-link a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 2rem;
+}
+
+.download-link a:hover {
+    color: #ffffff;
+}
+
+/* Navigation Bar */
+
+nav {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    /* Light text color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #002a80;
+    /* Darker blue */
+    border-radius: 5px;
+}
+
+/* First Row (Profile Section) */
 .firstrow {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .name {
-    width: 700px;
+    flex: 1;
+    text-align: center;
 }
 
-h1 {
-    font-size: 4rem;
-    width: 500px;
+.contact {
+    text-align: right;
+    margin-left: auto;
+    flex-basis: 300px;
+}
+
+.profilepicture {
+    flex-basis: 150px;
+    text-align: center;
 }
 
 img {
     width: 150px;
     height: 150px;
-    border-radius: 4px;
+    border-radius: 50%;
+    border: 3px solid #0044cc;
+    /* Blue border around the picture */
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    color: #0044cc;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0044cc;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/* Text and Lists */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+    /* Light text color */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #f0f0f0;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #444;
+    /* Grey line to separate sections */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #f0f0f0;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .firstrow {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .name {
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
